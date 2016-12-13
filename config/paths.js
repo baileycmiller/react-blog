@@ -28,11 +28,11 @@ var nodePaths = (process.env.NODE_PATH || '')
 module.exports = {
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
-  appIndexJs: resolveApp('src/index.js'),
+  appHtml: resolveApp('app/index.html'),
+  appIndexJs: resolveApp('app/index.js'),
   appPackageJson: resolveApp('package.json'),
-  appSrc: resolveApp('src'),
-  testsSetup: resolveApp('src/setupTests.js'),
+  appSrc: resolveApp('app'),
+  testsSetup: resolveApp('app/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
   ownNodeModules: resolveApp('node_modules'),
   nodePaths: nodePaths
@@ -45,11 +45,11 @@ if (__dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1) 
   module.exports = {
     appBuild: resolveOwn('../../../build'),
     appPublic: resolveOwn('../template/public'),
-    appHtml: resolveOwn('../template/public/index.html'),
-    appIndexJs: resolveOwn('../template/src/index.js'),
+    appHtml: resolveOwn('../template/app/index.html'),
+    appIndexJs: resolveOwn('../template/app/index.js'),
     appPackageJson: resolveOwn('../package.json'),
-    appSrc: resolveOwn('../template/src'),
-    testsSetup: resolveOwn('../template/src/setupTests.js'),
+    appSrc: resolveOwn('../template/app'),
+    testsSetup: resolveOwn('../template/app/setupTests.js'),
     appNodeModules: resolveOwn('../node_modules'),
     ownNodeModules: resolveOwn('../node_modules'),
     nodePaths: nodePaths

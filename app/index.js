@@ -5,5 +5,5 @@ import './stylesheets/application.scss';
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  document.getElementById('app')
 );
